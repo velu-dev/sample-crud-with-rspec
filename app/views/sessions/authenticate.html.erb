@@ -1,0 +1,11 @@
+<div class="login-form">
+
+<p id="notice"><%= notice %></p>
+<%= form_tag sessions_otp_path do %>
+
+      <%= label_tag :otp %>
+      <%= text_field_tag :otp, params[:otp] %>
+
+      <%= submit_tag "Sign in", class: "btn btn-large btn-primary" %>
+<% end %>
+</div>
